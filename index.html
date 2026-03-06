@@ -887,7 +887,7 @@
 SELECT 
     </textarea>
                         <div class="btn-group">
-                            
+
                             <button class="run-btn" onclick="runSql('code1', 'res1')">▶ Chạy Lệnh</button>
                         </div>
                     </div>
@@ -951,7 +951,7 @@ SELECT
                         <label>📝 Kiểm tra khác biệt giữa COUNT(*) và COUNT(revenue).</label>
                         <textarea id="code2" class="sql-code">SELECT </textarea>
                         <div class="btn-group">
-                            
+
                             <button class="run-btn" onclick="runSql('code2', 'res2')">▶ Chạy Lệnh</button>
                         </div>
                     </div>
@@ -1020,7 +1020,7 @@ GROUP BY customer_id;</pre>
 SELECT 
     </textarea>
                         <div class="btn-group">
-                            
+
                             <button class="run-btn" onclick="runSql('code3', 'res3')">▶ Chạy Lệnh</button>
                         </div>
                     </div>
@@ -1097,7 +1097,7 @@ SELECT
                         <label>📝 Lọc khách (customer_id) có tổng doanh thu &gt; 10,000.</label>
                         <textarea id="code4" class="sql-code">SELECT </textarea>
                         <div class="btn-group">
-                            
+
                             <button class="run-btn" onclick="runSql('code4', 'res4')">▶ Chạy Lệnh</button>
                         </div>
                     </div>
@@ -1131,27 +1131,37 @@ SELECT
             <div style="display:flex; gap:16px; align-items:flex-start;">
                 <div style="flex:0.9; min-width:0;">
                     <div class="schema-info" style="margin-top:0;">
-                        <strong>📊 Dữ liệu đã GROUP BY theo KH:</strong>
+                        <strong>📊 Bảng: <code>sales</code></strong>
                         <table class="small-table" style="width:100%; margin-top:8px;">
                             <tr>
+                                <th>id</th>
                                 <th>customer_id</th>
-                                <th>total</th>
-                                <th style="color:#61dafb;">→ ranking</th>
+                                <th>customer_name</th>
+                                <th>revenue</th>
                             </tr>
                             <tr>
+                                <td>4</td>
                                 <td>'C03'</td>
-                                <td>20000</td>
-                                <td><strong style="color:#f1c40f;">🥇 1</strong></td>
+                                <td>'Chau'</td>
+                                <td style="color:#f1c40f;">15000</td>
                             </tr>
                             <tr>
+                                <td>6</td>
+                                <td>'C05'</td>
+                                <td>'Em'</td>
+                                <td style="color:#f1c40f;">20000</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>'C03'</td>
+                                <td>'Chau'</td>
+                                <td style="color:#f1c40f;">5000</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
                                 <td>'C07'</td>
+                                <td>'Lan'</td>
                                 <td>12000</td>
-                                <td><strong style="color:#bdc3c7;">🥈 2</strong></td>
-                            </tr>
-                            <tr>
-                                <td>'C02'</td>
-                                <td>2800</td>
-                                <td><strong style="color:#d35400;">🥉 3</strong></td>
                             </tr>
                         </table>
                     </div>
@@ -1165,7 +1175,7 @@ FROM sales
 GROUP BY customer_id
 HAVING SUM(revenue) IS NOT NULL;</textarea>
                         <div class="btn-group">
-                            
+
                             <button class="run-btn" onclick="runSql('code5', 'res5')">▶ Chạy Lệnh</button>
                         </div>
                     </div>
@@ -1347,7 +1357,7 @@ FROM KhachCoDoanhThu k
 
 </textarea>
                             <div class="btn-group">
-                                
+
                                 <button class="run-btn" onclick="runSql('code_cte', 'res_cte')">▶ Chạy Lệnh</button>
                             </div>
                         </div>
@@ -1461,7 +1471,7 @@ SoDon AS (
 SELECT 
 </textarea>
                         <div class="btn-group">
-                            
+
                             <button class="run-btn" onclick="runSql('code6', 'res6')">▶ Chạy Lệnh</button>
                         </div>
                     </div>
