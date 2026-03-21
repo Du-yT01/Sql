@@ -1337,21 +1337,15 @@ ORDER BY t DESC;</pre>
                         <div class="sql-editor" style="margin-top:0;">
                             <label>📝 Viết CTE để hoàn thành bài toán:</label>
                             <textarea id="code_cte" class="sql-code" style="height:185px;">WITH KhachCoDoanhThu AS (
-    -- B1: Lọc KH có tổng revenue > 1000
-    SELECT customer_id, SUM(revenue) AS tong_dt
-    FROM sales
-    GROUP BY customer_id
-    HAVING 
+   
 
 ),
 KhachCoDonHang AS (
-    -- B2: KH có trong bảng orders
-    SELECT DISTINCT customer_id
-    FROM orders
+   
 )
 -- B3: Kết hợp 2 CTE
-SELECT k.customer_id, k.tong_dt
-FROM KhachCoDoanhThu k
+SELECT 
+FROM 
 
 </textarea>
                             <div class="btn-group">
