@@ -1169,11 +1169,9 @@ SELECT
                 <div style="flex:1.1; min-width:0;">
                     <div class="sql-editor" style="margin-top:0;">
                         <label>📝 Thêm 1 cột THỨ HẠNG dựa trên tổng doanh thu giảm dần.</label>
-                        <textarea id="code5" class="sql-code">SELECT customer_id, SUM(revenue) AS total,
-       -- RANK() OVER (ORDER BY cột DESC) AS ranking
-FROM sales 
-GROUP BY customer_id
-HAVING SUM(revenue) IS NOT NULL;</textarea>
+                        <textarea id="code5" class="sql-code">SELECT 
+FROM 
+</textarea>
                         <div class="btn-group">
 
                             <button class="run-btn" onclick="runSql('code5', 'res5')">▶ Chạy Lệnh</button>
